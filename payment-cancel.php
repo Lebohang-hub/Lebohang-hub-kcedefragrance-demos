@@ -1,0 +1,3 @@
+<?php
+require 'config.php';require 'includes/functions.php';$type=$_GET['type']??'order';$pageTitle='Payment cancelled';require 'includes/header.php';?>
+<div class="panel"><div class="eyebrow">Payment not completed</div><h1>Payment cancelled</h1><p>No payment has been confirmed. You can return to your account and try again.</p><a class="btn" href="<?= $type==='registration'?'pay-registration.php':'my-orders.php' ?>">Return to shop</a></div><?php require 'includes/footer.php';?>

@@ -1,0 +1,3 @@
+<?php
+require 'config.php';require 'includes/functions.php';require_login();$type=$_GET['type']??'order';$pageTitle='Payment return';require 'includes/header.php';?>
+<div class="panel"><div class="eyebrow">PayFast return</div><h1>Thank you</h1><p>PayFast has returned you to the shop. The system is checking for PayFast's verified server notification; this page alone does not prove that payment succeeded.</p><?php if($type==='registration'):?><p>Your member account will be activated once the payment notification is verified.</p><?php else:?><p>Your order's payment status will update once the notification is verified.</p><?php endif;?><a class="btn" href="<?= $type==='registration'?'member.php':'my-orders.php' ?>">View status</a></div><?php require 'includes/footer.php';?>

@@ -1,0 +1,1 @@
+</main><footer class="footer">Fragrance for every space · <?=date('Y')?> <?=e(SITE_NAME)?></footer></body></html>
